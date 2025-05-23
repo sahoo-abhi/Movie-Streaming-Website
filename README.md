@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+This web application is built with React, Tailwind CSS, shadcn/ui, and Vite, using real-time movie data from The Movie Database (TMDb) API and streaming functionality powered by Vidsrc.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It’s a sleek, responsive, and intuitive platform for exploring and watching the latest movies online.
 
-Currently, two official plugins are available:
+🌟 Features:-
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔍 Real-Time Data: Fetches trending, popular, upcoming, and top-rated movies from TMDb.
 
-## Expanding the ESLint configuration
+📄 Detailed Movie Pages: View synopses, release dates, genres, ratings, trailers, and more.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🎥 Streaming Support: Seamless video streaming via the Vidsrc API.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🎨 Modern UI: Built using Tailwind CSS and shadcn/ui components for an elegant, responsive design.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+⚡ Fast Performance: Powered by Vite for rapid development and lightning-fast builds.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+📱 Responsive Layout: Works smoothly across all devices — desktop, tablet, and mobile.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+🛠️ Tech Stack:-
+
+React – Frontend library
+
+Vite – Build tool for fast performance
+
+Tailwind CSS – Utility-first CSS framework
+
+shadcn/ui – Accessible and beautiful UI components
+
+TMDb API – Real-time movie data
+
+Vidsrc – Streaming provider integration
+
+🚀 Getting Started
+
+To run this project locally:
+
+1.Clone the repository:
+
+bash
+
+git clone https://github.com/your-username/moviehub.git
+cd moviehub
+
+2.Install dependencies:
+
+bash
+
+npm install
+
+3.Set up environment variables:
+
+Create a .env file in the root directory and add:
+
+env
+
+VITE_TMDB_API_KEY=your_tmdb_api_key
+
+You can obtain your free API key by signing up at https://www.themoviedb.org/.
+
+4.Run the app:
+
+bash
+
+npm run dev
+
+🤝 Contributing
+
+Contributions are welcome! If you have suggestions, bug reports, or want to enhance MovieHub, feel free to fork the repository and submit a pull request.
+
+📬 Contact
+
+If you're interested in this project or have ideas for collaboration, feel free to connect with me on LinkedIn or open an issue on GitHub.
